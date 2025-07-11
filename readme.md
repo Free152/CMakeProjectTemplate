@@ -42,7 +42,7 @@ export PATH=$PATH:$VCPKG_ROOT
 ## 1. clone整个项目
 
 ```git
-
+git clone https://github.com/Free152/CMakeProjectTemplate.git
 ```
 
 ## 2. 修改项目名称
