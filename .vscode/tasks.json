@@ -1,0 +1,27 @@
+// 任务配置文件
+// 任务就类似于自动化脚本，VSCode 通过任务来执行一些常用的操作，比如编译、运行、测试等
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "vcpkg init",
+		"type": "shell",
+		"command": "vcpkg",
+		"args": ["new", "--application"],
+		"problemMatcher": [],
+		"detail": "vcpkg初始化：在项目根目录下创建 vcpkg 清单文件"
+	  },
+	//   {
+	// 	"label": "vcpkg install",
+	// 	"type": "shell",
+	// 	"command": "vcpkg",
+	// 	"args": ["install"],
+	// 	//"group": {
+	// 	//  "kind": "build",
+	// 	//  "isDefault": false
+	// 	//},
+	// 	"problemMatcher": [],
+	// 	"detail": "使用 vcpkg 安装vcpkg.json中配置的依赖库"
+	//   }
+	]
+}

@@ -1,0 +1,44 @@
+// 项目配置文件
+// 配置项目使用何种编译器生成，配置之后才可以在左侧调试与运行中进行调试
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+          // 主项目调试配置
+            "name": "Project-Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/CMakeProjectTemplate",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+          // 单元测试调试配置
+            "name": "Tests-Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/GoogleTestTemplate",
+            "args": ["--gtest_filter=PlanTest.GenerateReviewPlan2"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",  // 如果你在 macOS
+            "setupCommands": [
+              {
+                "description": "Enable pretty-printing for gdb/lldb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+              }
+            ]
+          }
+
+    ]
+}

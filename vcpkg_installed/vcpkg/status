@@ -1,0 +1,23 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 2a9e9848b562118ec07c10eeb83a4c9b4da739cc63068423f3e68b1e720dffd2
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 8bf8ef6ad8ac5c0137bfdee0daccf8129222d3a063fcd130f74a2ca9ed0cf18d
+Status: install ok installed
+
+Package: gtest
+Version: 1.17.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 57ea7c04158d94a0e4e1f4afbdb4964224ba6ad30a171b83c4397625c5f5a30e
+Description: Google Testing and Mocking Framework
+Status: install ok installed
+
